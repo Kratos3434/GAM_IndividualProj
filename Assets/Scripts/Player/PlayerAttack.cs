@@ -42,7 +42,7 @@ public class PlayerAttack : MonoBehaviour
             if (enemy.tag == "enemy")
             {
                 Minion minion = enemy.GetComponent<Minion>();
-                //minion.TakeDamage(attacker.GetAttackDamage());
+                minion.TakeDamage(attacker.GetAttackDamage());
                 if (minion != null)
                 {
                     minion.TakeDamage(attacker.GetAttackDamage());
@@ -62,6 +62,14 @@ public class PlayerAttack : MonoBehaviour
                 if (protector.GetHealth() <= 0f)
                 {
                     playerStatsUI.SetGoldEarned(500);
+                }
+            }else if (enemy.tag == "boss")
+            {
+                Boss boss = enemy.GetComponent<Boss>();
+                boss.TakeDamage(attacker.GetAttackDamage());
+                if (boss.GetHealth() <= 0f)
+                {
+                    playerStatsUI.SetGoldEarned(1000);
                 }
             }
         }

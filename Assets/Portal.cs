@@ -9,7 +9,7 @@ public class Portal : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            ChangeScene.MoveToScene(3);
+            ChangeScene.MoveToScene(4);
         }
     }
 }
