@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - enemy
+  - platform
+  - building
+  - ally minion
+  - enemy protector
+  - ally protector
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - player
+  - Water
+  - UI
+  - building
+  - Ground
+  - Text
+  - enemy
+  - Platform
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: background
+    uniqueID: 4070058497
+    locked: 0
+  - name: player
+    uniqueID: 2148034985
+    locked: 0
+  - name: foreground
+    uniqueID: 4292184963
+    locked: 0
