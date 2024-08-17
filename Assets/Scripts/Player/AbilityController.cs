@@ -38,8 +38,7 @@ public class AbilityController : MonoBehaviour
     private bool e_isEnabled = false;
     private bool r_isEnabled = false;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
         q_cooldown.enabled = false;
         w_cooldown.enabled = false;
@@ -51,6 +50,20 @@ public class AbilityController : MonoBehaviour
         e_cdTimer.enabled = false;
         r_cdTimer.enabled = false;
     }
+
+    // Start is called before the first frame update
+    //void Start()
+    //{
+    //    q_cooldown.enabled = false;
+    //    w_cooldown.enabled = false;
+    //    e_cooldown.enabled = false;
+    //    r_cooldown.enabled = false;
+
+    //    q_cdTimer.enabled = false;
+    //    w_cdTimer.enabled = false;
+    //    e_cdTimer.enabled = false;
+    //    r_cdTimer.enabled = false;
+    //}
 
     // Update is called once per frame
     void Update()
