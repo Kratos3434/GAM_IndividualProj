@@ -32,6 +32,7 @@ public class Player : IBaseStats
 
         playerStatsUI.SetAttackDamage(GetAttackDamage());
         playerStatsUI.SetAttackSpeed(GetAttackSpeed());
+        playerStatsUI.SetGoldEarned(gold);
         time = 0f;
     }
 
@@ -40,7 +41,7 @@ public class Player : IBaseStats
     {
         if (GetHealth() <= 0f)
         {
-            ChangeScene.MoveToScene(2);
+            ChangeScene.MoveToScene(4);
         }
         if (this.GetHealth() < this.GetMaxHealth())
         {

@@ -15,6 +15,7 @@ public class ShopManagerScript : MonoBehaviour
     [SerializeField] private PlayerStatsUI playerStatsUI;
     [SerializeField] PlayerHealth playerHealth;
     [SerializeField] PlayerHealthText playerHealthText;
+  
     private bool isGamePaused = false;
 
     void Start()
@@ -99,12 +100,17 @@ public class ShopManagerScript : MonoBehaviour
         switch (itemID)
         {
             case 1:
-                float newHealth = player.GetHealth() + 100f;
-                if (newHealth > player.GetMaxHealth())
+                //float newHealth = player.GetHealth() + 100f;
+                //if (newHealth > player.GetHealth())
+                //{
+                //    newHealth = player.GetHealth();
+                //}
+                player.SetHealth(player.GetHealth() + 100f);
+                if (player.GetHealth() > player.GetMaxHealth())
                 {
-                    newHealth = player.GetMaxHealth();
+                    player.SetHealth(player.GetMaxHealth());
                 }
-                player.SetHealth(newHealth);
+                playerHealth.SetHealth(player.GetHealth());
                 playerHealthText.setHealthText(player.GetHealth(), player.GetMaxHealth(), 0.9f);
                 break;
             case 2:
@@ -113,7 +119,12 @@ public class ShopManagerScript : MonoBehaviour
                 playerStatsUI.SetAttackDamage(player.GetAttackDamage());
                 break;
             case 3:
+                float oldMaxHealth = player.GetMaxHealth();
                 player.SetMaxHealth(player.GetMaxHealth() + 100f);
+                if (player.GetHealth() == oldMaxHealth)
+                {
+                    player.SetHealth(player.GetMaxHealth());
+                }
                 playerHealth.SetMaxHealth(player.GetMaxHealth());
                 playerHealthText.setHealthText(player.GetHealth(), player.GetMaxHealth(), 0.9f);
                 break;
