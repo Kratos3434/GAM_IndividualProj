@@ -493,7 +493,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2733619398514770891, guid: 410f37189a4a74d49a65395419b21fdf, type: 3}
       propertyPath: m_text
-      value: Main Menu
+      value: Credits
       objectReference: {fileID: 0}
     - target: {fileID: 2733619398514770891, guid: 410f37189a4a74d49a65395419b21fdf, type: 3}
       propertyPath: m_fontSize
@@ -593,7 +593,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7776761825090464690, guid: 410f37189a4a74d49a65395419b21fdf, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

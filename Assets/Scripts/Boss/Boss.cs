@@ -40,7 +40,6 @@ public class Boss : IBaseStats
     public void win()
     {
         Destroy(gameObject);
-        ChangeScene.MoveToScene(3);
     }
 
     public void LookAtPlayer()
