@@ -11,6 +11,7 @@ TagManager:
   - enemy protector
   - ally protector
   - boss
+  - Event
   layers:
   - Default
   - TransparentFX
