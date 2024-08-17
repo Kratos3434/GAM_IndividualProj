@@ -10,6 +10,7 @@ TagManager:
   - ally minion
   - enemy protector
   - ally protector
+  - boss
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - Text
   - enemy
   - Platform
-  - 
+  - Boss
   - 
   - 
   - 
