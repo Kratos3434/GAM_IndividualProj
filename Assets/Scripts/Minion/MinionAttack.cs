@@ -36,7 +36,8 @@ public class MinionAttack : MonoBehaviour
 
         if (hitEnemies.Length > 0 )
         {
-           Collider2D enemy = hitEnemies[hitEnemies.Length - 1];
+            GetComponent<AudioSource>().Play();
+            Collider2D enemy = hitEnemies[hitEnemies.Length - 1];
 
             //Debug.Log("We hit " + enemy.name);
             if (gameObject.tag == "ally minion")

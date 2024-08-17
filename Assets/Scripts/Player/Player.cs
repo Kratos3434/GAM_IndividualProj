@@ -41,7 +41,7 @@ public class Player : IBaseStats
     {
         if (GetHealth() <= 0f)
         {
-            ChangeScene.MoveToScene(4);
+            ChangeScene.MoveToScene(2);
         }
         if (this.GetHealth() < this.GetMaxHealth())
         {
