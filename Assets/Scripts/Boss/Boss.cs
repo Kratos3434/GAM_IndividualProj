@@ -6,6 +6,7 @@ public class Boss : IBaseStats
 {
 
 	public Transform player;
+    public float maxhealth;
 
 	public bool isFlipped = false;
 
@@ -15,7 +16,7 @@ public class Boss : IBaseStats
 
     void Start()
     {
-        this.SetMaxHealth(2500f);
+        this.SetMaxHealth(maxhealth);
         this.SetHealth(this.GetMaxHealth());
         healthBar.SetMaxHealth(this.GetMaxHealth());
     }
