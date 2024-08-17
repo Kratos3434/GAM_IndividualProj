@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Player: IBaseStats
+public class Player : IBaseStats
 {
     //float this.GetMaxHealth() = 500f;
     [SerializeField] PlayerHealth playerHealth;
@@ -11,7 +11,7 @@ public class Player: IBaseStats
     [SerializeField] PlayerStatsUI playerStatsUI;
     float healthRegen = 0.9f;
     private float attackRange = 0.5f;
-    private int gold = 0;
+    private int gold = 100;
     private float time;
     private int minionsKilled = 0;
 
@@ -93,5 +93,5 @@ public class Player: IBaseStats
         return this.gold;
     }
 
-    public void SetGold(int gold) {  this.gold = gold; }
+    public void SetGold(int gold) { this.gold = gold; }
 }
